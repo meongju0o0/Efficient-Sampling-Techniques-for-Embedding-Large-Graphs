@@ -1,9 +1,16 @@
-# PinSAGE example
+# Efficient Sampling Techniques for Embedding Large Graphs
+- Kijin Kwon, Juyeong Shin, Young-Koo Lee
+- KCC 2022 Paper
+- link: [https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11113618](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11113618)<br/><br/>
+- Modified from DGL pinSAGE example
+   - paper link: [https://dl.acm.org/doi/abs/10.1145/3219819.3219890](https://dl.acm.org/doi/abs/10.1145/3219819.3219890)
+   - example link: [https://github.com/dmlc/dgl/tree/master/examples](https://github.com/dmlc/dgl/tree/master/examples)
 
 ## Requirements
-
 - dask
 - pandas
+- pytorch 2.0.1
+- dgl 1.1.1
 - torchtext>=0.9.0
 
 ## Prepare datasets
@@ -48,7 +55,7 @@ everything on GPU.
 
 The HITS@10 is 0.01241, compared to 0.01220 with SLIM with the same dimensionality.\
 
-## Difference from the paper
+## Difference from the pinSAGE paper with DGL example
 
 The implementation here is different from what being described in the paper:
 
