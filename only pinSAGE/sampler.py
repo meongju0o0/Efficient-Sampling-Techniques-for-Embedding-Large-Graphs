@@ -76,13 +76,15 @@ class NeighborSampler(object):
         self.user_to_item_etype = list(g.metagraph()[user_type][item_type])[0]
         self.item_to_user_etype = list(g.metagraph()[item_type][user_type])[0]
         self.samplers = [
-            RandomSampler(
+            dgl.sampling.PinSAGESampler(
                 g,
+                item_type,
+                user_type,
                 random_walk_length,
                 random_walk_restart_prob,
                 num_random_walks,
-                num_neighbors,
-                [self.item_to_user_etype, self.user_to_item_etype]),
+                num_neighbors
+            ),
             dgl.sampling.PinSAGESampler(
                 g,
                 item_type,

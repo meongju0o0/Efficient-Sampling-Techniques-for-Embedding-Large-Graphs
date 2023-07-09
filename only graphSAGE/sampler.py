@@ -83,15 +83,13 @@ class NeighborSampler(object):
                 num_random_walks,
                 num_neighbors,
                 [self.item_to_user_etype, self.user_to_item_etype]),
-            dgl.sampling.PinSAGESampler(
+            RandomSampler(
                 g,
-                item_type,
-                user_type,
                 random_walk_length,
                 random_walk_restart_prob,
                 num_random_walks,
-                num_neighbors
-            )
+                num_neighbors,
+                [self.item_to_user_etype, self.user_to_item_etype])
         ]
 
     def sample_blocks(self, seeds, heads=None, tails=None, neg_tails=None):
