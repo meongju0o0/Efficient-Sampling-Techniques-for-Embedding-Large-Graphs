@@ -3,6 +3,7 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader, IterableDataset
 from torchtext.data.functional import numericalize_tokens_from_iterator
+from random_sampler import RandomSampler
 
 
 def padding(array, yy, val):
@@ -75,6 +76,13 @@ class NeighborSampler(object):
         self.user_to_item_etype = list(g.metagraph()[user_type][item_type])[0]
         self.item_to_user_etype = list(g.metagraph()[item_type][user_type])[0]
         self.samplers = [
+            RandomSampler(
+                g,
+                random_walk_length,
+                random_walk_restart_prob,
+                num_random_walks,
+                num_neighbors,
+                [self.item_to_user_etype, self.user_to_item_etype]),
             dgl.sampling.PinSAGESampler(
                 g,
                 item_type,
@@ -82,9 +90,8 @@ class NeighborSampler(object):
                 random_walk_length,
                 random_walk_restart_prob,
                 num_random_walks,
-                num_neighbors,
+                num_neighbors
             )
-            for _ in range(num_layers)
         ]
 
     def sample_blocks(self, seeds, heads=None, tails=None, neg_tails=None):
