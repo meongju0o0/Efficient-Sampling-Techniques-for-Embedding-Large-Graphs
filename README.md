@@ -53,7 +53,7 @@ python model_sparse.py data_processed --num-epochs 300 --num-workers 2 --device 
 Note that since the embedding update is done on CPU, it will be significantly slower than doing
 everything on GPU.
 
-The HITS@10 is 0.01241, compared to 0.01220 with SLIM with the same dimensionality.\
+The HITS@10 is 0.01241, compared to 0.01220 with SLIM with the same dimensionality.
 
 ## Difference from the pinSAGE paper with DGL example
 
