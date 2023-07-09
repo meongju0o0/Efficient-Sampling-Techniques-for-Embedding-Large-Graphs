@@ -1,2 +1,8 @@
-/nowplaying_rs_dataset
-/data_processed
+/only pinSAGE/nowplaying_rs_dataset
+/only pinSAGE/data_processed
+/only graphSAGE/nowplaying_rs_dataset
+/only graphSAGE/data_processed
+/pinSAGE sampling for 1st hop/nowplaying_rs_dataset
+/pinSAGE sampling for 1st hop/data_processed
+/graphSAGE sampling for 1st hop/nowplaying_rs_dataset
+/graphSAGE sampling for 1st hop/data_processed
