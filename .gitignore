@@ -1,8 +1,19 @@
 /only pinSAGE/nowplaying_rs_dataset
 /only pinSAGE/data_processed
+/only pinSAGE/__pycache__
+/only pinSAGE/.idea
+
 /only graphSAGE/nowplaying_rs_dataset
 /only graphSAGE/data_processed
+/only graphSAGE/__pycache__
+/only graphSAGE/.idea
+
 /pinSAGE sampling for 1st hop/nowplaying_rs_dataset
 /pinSAGE sampling for 1st hop/data_processed
+/pinSAGE sampling for 1st hop/__pycache__
+/pinSAGE sampling for 1st hop/.idea
+
 /graphSAGE sampling for 1st hop/nowplaying_rs_dataset
 /graphSAGE sampling for 1st hop/data_processed
+/graphSAGE sampling for 1st hop/__pycache__
+/graphSAGE sampling for 1st hop/.idea
