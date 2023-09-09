@@ -11,7 +11,7 @@
 - pandas
 - pytorch 2.0.1
 - dgl 1.1.1
-- torchtext>=0.9.0
+- torchtext >= 0.9.0
 
 ## Prepare datasets
 
