@@ -1,7 +1,7 @@
 # Efficient Sampling Techniques for Embedding Large Graphs
 - Kijin Kwon, Juyeong Shin, Young-Koo Lee
 - KCC 2022 Paper
-- link: [https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11113618](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11113618)<br/><br/>
+- Paper link: [https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11113618](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11113618)<br/><br/>
 - Modified from DGL pinSAGE example
    - paper link: [https://dl.acm.org/doi/abs/10.1145/3219819.3219890](https://dl.acm.org/doi/abs/10.1145/3219819.3219890)
    - example link: [https://github.com/dmlc/dgl/tree/master/examples](https://github.com/dmlc/dgl/tree/master/examples)
