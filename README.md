@@ -73,3 +73,6 @@ The implementation here is different from what being described in the paper:
 3. The PinSAGE paper directly pass the GNN output to an MLP and make the result the final item
    representation.  Here, I'm adding the GNN output with the node's own learnable embedding as
    the final item representation instead.
+
+### LICENSE
+© 2022 meongju0o0 uses Apache 2.0 License. Powered by DGL Team.
