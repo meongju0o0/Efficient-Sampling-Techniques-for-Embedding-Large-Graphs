@@ -75,4 +75,4 @@ The implementation here is different from what being described in the paper:
    the final item representation instead.
 
 ### LICENSE
-© 2022 meongju0o0 uses Apache 2.0 License. Powered by DGL Team.
+© 2022 kijin and meongju0o0 uses Apache 2.0 License. Powered by DGL Team.
